@@ -1,0 +1,40 @@
+✅ 1. import smtplib
+Think of this as:
+📬 A mailman who knows how to talk to email servers (like Gmail, Outlook, etc.) and send emails.
+
+smtplib = Simple Mail Transfer Protocol library.
+
+It lets Python connect to an email server and send messages from your script.
+
+You use it to log in to your email account, create a connection, and send messages.
+
+✅ 2. from email.mime.multipart import MIMEMultipart
+Think of this as:
+📦 A box that can hold multiple parts of your email — like the subject, body, attachments, etc.
+
+MIMEMultipart means "Multi-part MIME message" — this is how real emails are built.
+
+You need this when your email includes HTML, attachments, or text + images, etc.
+
+It’s like a container that helps build a complex email piece by piece.
+
+✅ 3. from email.mime.text import MIMEText
+Think of this as:
+📝 The paper you write your message on.
+
+MIMEText is used to create the main content of your email (like the message body).
+
+You can tell it whether your message is plain text ('plain') or formatted like a webpage ('html').
+
+Example:
+
+python
+Copy
+Edit
+MIMEText("Hello", "plain")     # Just plain text
+MIMEText("<h1>Hello</h1>", "html")  # Fancy HTML text
+🧠 Summary:
+Code	What it Does	Easy Explanation
+import smtplib	Sends email using an email server	The mailman that delivers email
+MIMEMultipart()	Builds full email with parts	The box that holds all the parts
+MIMEText()	Adds body (plain or HTML) to email	The paper with your mess
