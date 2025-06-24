@@ -1,3 +1,5 @@
+help:  https://chatgpt.com/share/685af49f-af98-8011-be78-ef7c6d985599
+
 ✅ 1. import smtplib
 Think of this as:
 📬 A mailman who knows how to talk to email servers (like Gmail, Outlook, etc.) and send emails.
